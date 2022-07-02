@@ -5,11 +5,24 @@ import { Link } from "react-router-dom";
 import { useCart } from "../../Context/cartContext"
 import { useWishlist } from "../../Context/wishlistContext";
 import { Navbar } from "../Navbar/navbar";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { getCartItems } from "../../redux/reducers/Cart/cartSlice";
 
 const Cart = () => {
-const { cartState, cartDispatch} = useCart();
-const { wishState, wishDispatch} = useWishlist();
-const initialPrice = cartState.cart.reduce((acc, item) => acc + Number(item.price) * Number(item.quantity),0);
+    const { cartDispatch }= useDispatch();
+
+    useEffect(() =>{
+        cartDispatch(getCartItems());
+    }, [cartDispatch])
+
+    const cartProducts = useSelector((state) => state.like.likes);
+    const isUserLoggedIn = useSelector((state) => state.auth.isUserLoggedin);
+
+
+// const { cartState, cartDispatch} = useCart();
+// const { wishState, wishDispatch} = useWishlist();
+const initialPrice = cartProducts.reduce((acc, item) => acc + Number(item.price) * Number(item.quantity),0);
 const discountPrice = (10*initialPrice)/100;
 const totalPrice = initialPrice-discountPrice;
 
@@ -19,7 +32,7 @@ return (
     <h1 class="title cart-title">My Cart <span>({cartState.cart.length})</span></h1>
     <div class="cart-container">
         <div class="cart-card-container justify-align">
-            {cartState.cart.map((item) =>
+            {cartProducts.map((item) =>
             <article class="card hz-card image-overlay">
                 <div class="horizontal-flex">
                     <img src={item.imgSrc} alt={item.title} class="cart-card-img" />
