@@ -1,0 +1,25 @@
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #21256a;
+    padding: var(--container-padding);
+}
+
+.footer-heading {
+    color: var(--bg-color);
+    font-weight: 400;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.fab {
+    color: var(--bg-color);
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 80%);
+    border-radius: 100%;
+}

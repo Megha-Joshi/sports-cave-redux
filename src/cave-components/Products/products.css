@@ -1,0 +1,83 @@
+.page-container {
+    display: flex;
+}
+
+.filter {
+    height: 37.5rem;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+.filter-head {
+    display: flex;
+    gap: var(--container-gap);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.filter-heading {
+    margin: var(--container-margin);
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.range-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+}
+
+.range-number {
+    margin: 0px 0px 1px 1rem;
+
+}
+
+.price-range {
+    width: 90%;
+    margin: 0px 0px 1px 1rem;
+    padding-top: 1px;
+}
+
+.product-container {
+    margin: var(--container-margin);
+    width: 77%;
+    padding: 10px;
+}
+
+.product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--container-gap);
+}
+
+.page-container {
+    display: flex;
+    gap: var(--content-padding);
+    margin-bottom: 2.5rem;
+}
+
+.disp-new-line {
+    display: block;
+    margin: 1rem;
+}
+
+.card-ecom {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--box-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--container-border-radius);
+    margin: var(--container-margin);
+    padding: var(--container-padding);
+    width: 20rem;
+    height: 20%;
+    gap: var(--container-gap);
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.5rem;
+}

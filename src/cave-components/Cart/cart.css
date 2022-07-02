@@ -1,0 +1,131 @@
+.cart-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    gap: var(--container-gap);
+    justify-content: center;
+}
+
+.cart-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--container-gap);
+    flex-direction: column;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.cart-card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-card-img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    width: 50%;
+    max-height: 100%;
+}
+
+.cart-title {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.discount {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.discount-item {
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.quantity {
+    display: flex;
+    gap: 0.75rem;
+    margin: 8px;
+}
+
+.fal {
+    color: black;
+    border: 1px solid var(--font-color);
+    border-radius: 50%;
+}
+
+.count {
+    border: 1px solid var(--font-color);
+    border-radius: 1rem;
+}
+
+.qnt-change {
+    padding: 1px 3px;
+}
+
+.qnt-product {
+    padding: 0px 8px;
+}
+
+.cart-bill-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--container-gap);
+    background-color: var(--box-color);
+    width: 25%;
+    height: 25%;
+    border-radius: var(--container-border-radius);
+    margin-right: 20px;
+    padding: var(--container-padding);
+    justify-content: end;
+}
+
+.bill-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    border-bottom: 2px solid var(--secondary-color);
+    min-width: 14.3rem;
+}
+
+/* Override Component Library */
+.card-container {
+    width: 40%;
+    height: 90%;
+}
+
+.horizontal-flex {
+    display: flex;
+    gap: var(--container-gap);
+    width: 30rem;
+}
+
+.hz-card {
+    width: 55%;
+    flex-basis: 20rem;
+    padding: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.card-head {
+    margin: 5px;
+}
+
+.card-cart-rating{
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 12rem;
+    background-color: var(--box-color);
+    padding: 5px;
+    grid-gap: 2px;
+    gap: 2px;
+}

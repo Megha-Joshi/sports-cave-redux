@@ -1,0 +1,86 @@
+.btn-no-bg {
+    background-color: transparent;
+    color: var(--accent-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-no-bg:hover {
+    color: var(--accent-hover);
+}
+
+.sm-text {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.justify-align {
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0.625rem 0rem 1.25rem 0.625rem;
+}
+
+/* Override Component Library */
+
+.no-margin {
+    margin: 0;
+}
+
+.outline-btn-color {
+    color: var(--accent-color);
+}
+
+.outline-btn-color:hover {
+    background-color: var(--bg-color);
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+.products-btn-color {
+    color: var(--accent-color);
+}
+
+.products-btn-color:hover {
+    background-color: var(--bg-color);
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+.btn-info-outline:hover {
+    background-color: var(--bg-color);
+    text-decoration: underline;
+}
+
+.items-color {
+    color: var(--font-color);
+}
+
+.solid-btn-color {
+    color: var(--bg-color);
+}
+
+.btn-no-bg-color {
+    color: var(--accent-color);
+}
+
+.btn-no-bg-color:active {
+    color: var(--accent-hover);
+}
+
+.login-color {
+    color: var(--secondary-color);
+}
+
+.login-color:hover {
+    background-color: var(--bg-color);
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.btn-secondary-outline:hover {
+    background: var(--bg-color);
+    text-decoration: underline;
+}
